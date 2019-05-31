@@ -1,0 +1,4 @@
+.doit.db.db
+*.pyc
+*.txt
+*.DS_Store
