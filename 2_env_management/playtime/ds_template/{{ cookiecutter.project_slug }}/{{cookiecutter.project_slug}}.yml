@@ -1,0 +1,14 @@
+name: {{ cookiecutter.project_slug }}
+channels:
+{% for channel in cookiecutter.conda_channels.split(' ') %}
+  - {{ channel }}
+{% endfor %}
+dependencies:
+  - python={{ cookiecutter.python_version }}
+  - pip
+  - setuptools
+  - ipykernel
+  - notebook
+{% for dependency in cookiecutter.dependencies.split(' ') %}
+  - {{ dependency }}
+{% endfor %}

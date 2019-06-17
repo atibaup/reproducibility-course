@@ -1,0 +1,8 @@
+{
+  "project_name": "My New Project",
+  "project_description": "Description of my New Project",
+  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "conda_channels": "conda-forge defaults",
+  "python_version": "3.7",
+  "dependencies": ""
+}
